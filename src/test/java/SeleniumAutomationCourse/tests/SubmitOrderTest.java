@@ -90,11 +90,14 @@ public class SubmitOrderTest extends BaseTest{
 		
 		return new Object[][] {{map},{map1}};
 	}*/
+	// commented above code so I will get to know different ways to use DataProvider
 	
 	@DataProvider
 	public Object[][] getData() throws IOException{
 		List<HashMap<String,String>> data=getJsonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\SeleniumAutomationCourse\\data\\PurchaseOrder.json");
 		return new Object[][] {{data.get(0)}, {data.get(1)}};
 	}
+	
+	
 
 }
